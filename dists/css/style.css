@@ -135,7 +135,7 @@
 }
 
 .scrolling-active {
-    background-color: rgba(30, 58, 138, 0.98);
+    background-color: rgba(30, 58, 138, 0.9);
     transition: 0.5s;
 }
 /* navbar */
@@ -241,9 +241,6 @@
     padding-top: 14px;
     color: var(--text-color)
 }
-.layanan-card {
-    margin-bottom: 50px;
-}
 #layanan-card1 {
     margin-bottom: 50px;
     max-width: 1130px;
@@ -255,12 +252,20 @@
 }
 .layanan-card .card {
     padding: 25px 15px 15px 25px;
-    width: 270px;
+    width: 260px;
     height: 250px;
     background-color: var(--background-color);
     border-radius: 12px;
     border: none;
     justify-content: space-between;
+}
+#layanan-card1-card {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1)
+}
+#layanan-card1-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    scale: 1.05;
+    transition: 0.3s;
 }
 .layanan-card .card h3 {
     font-size: 20px;
@@ -290,6 +295,11 @@
 .layanan-card2 .card {
     padding: 10px;
     border-radius: 20px;
+}
+.layanan-card2 .card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    scale: 1.02;
+    transition: 0.3s;
 }
 .layanan-card2 img {
     border-radius: 16px;
@@ -328,6 +338,80 @@
     background-color: var(--secondary-color);
 }
 /* layanan */
+
+/* tentang */
+.tentang {
+    margin-top: 100px;
+    background-color: var(--primary-color);
+    height: 600px;
+    padding: 60px 0;
+}
+.tentang .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.tentang-header h1 {
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+.tentang-header b {
+    color: var(--secondary-color);
+}
+.visi-misi {
+    justify-content: space-between;
+    gap: auto;
+}
+.visi-misi-card {
+    width: 430px;
+    height: 170px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+}
+.visi-misi-text {
+    margin-left: 15px;
+}
+.visi-misi-text h3 {
+    font-size: 24px;
+
+}
+.visi-misi-text p {
+    font-size: 14px;
+    color: var(--text-color);
+}
+.visi-text {
+    color: var(--primary-color);
+}
+.misi-text {
+    color: var(--secondary-color)
+}
+.tentang-img img {
+    border-radius: 8px;
+    display: block;
+    object-fit: cover;
+}
+.tentang-img {
+    position: relative;
+    display: inline-block;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    z-index: 2;
+}
+.bottom-left p {
+    color: var(--background-color);
+    padding: 5px 10px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    margin: 0;
+    font-size: 12px;
+}
+/* tentang */
 
 /* Responsive */
 @media (max-width: 600px) {
