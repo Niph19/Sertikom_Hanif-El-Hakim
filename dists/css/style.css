@@ -77,15 +77,17 @@
     margin-bottom: 0;
     margin-top: 5px
 }
+
 .media .container {
     gap: 8px;
 }
+
 /* Top */
 
 /* navbar */
 .navbar {
     background-color: var(--primary-color);
-    max-height: 60px;
+    height: 60px;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -138,6 +140,7 @@
     background-color: rgba(30, 58, 138, 0.9);
     transition: 0.5s;
 }
+
 /* navbar */
 
 /* hero */
@@ -201,6 +204,7 @@
     height: auto;
     display: block;
 }
+
 /* hero */
 
 /* client */
@@ -209,12 +213,14 @@
     max-width: 1000px;
     margin: 0 auto;
 }
+
 .client h3 {
     color: var(--heading-color);
     margin-bottom: 15px;
     font-size: 16px;
     padding-left: 18px;
 }
+
 .client .container {
     display: flex;
 }
@@ -227,29 +233,35 @@
 
 /* layanan */
 .layanan {
-    margin-top: 85px;
+    padding-top: 85px;
 }
+
 .layanan .container {
     max-width: 1100px;
     margin: 0 auto;
 }
+
 .layanan h1 {
     color: var(--heading-color);
 }
+
 #layanan-p {
     font-size: 18px;
     padding-top: 14px;
     color: var(--text-color)
 }
+
 #layanan-card1 {
     margin-bottom: 50px;
     max-width: 1130px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .layanan-card .col {
     padding: 0;
 }
+
 .layanan-card .card {
     padding: 25px 15px 15px 25px;
     width: 260px;
@@ -259,25 +271,30 @@
     border: none;
     justify-content: space-between;
 }
+
 #layanan-card1-card {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1)
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1)
 }
+
 #layanan-card1-card:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     scale: 1.05;
     transition: 0.3s;
 }
+
 .layanan-card .card h3 {
     font-size: 20px;
     color: var(--heading-color);
     margin-top: 12px;
     line-height: 1.15;
 }
+
 .layanan-card .card p {
     padding: 0;
     font-size: 14px;
     margin: 0;
 }
+
 #layanan-card-p4 {
     padding-bottom: 18px;
 }
@@ -286,81 +303,99 @@
     max-width: 1130px;
     margin: 0 auto;
 }
+
 .layanan-card2 .container {
     width: auto;
     padding: 0;
     margin: 0;
     gap: 20px;
 }
+
 .layanan-card2 .card {
     padding: 10px;
     border-radius: 20px;
 }
+
 .layanan-card2 .card:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     scale: 1.02;
     transition: 0.3s;
 }
+
 .layanan-card2 img {
     border-radius: 16px;
 }
+
 .card-body {
     padding: 24px 10px 10px 10px;
 }
+
 .card-body h5 {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 10px;
 }
+
 .card-text {
     margin-bottom: 10px;
 }
+
 #layanan-card2-h {
     margin-top: 8px;
     margin-bottom: 32px;
 }
+
 #layanan-card2-p {
     font-size: 15px;
     font-weight: 300;
     margin-bottom: 14px;
 }
+
 .card-body .btn {
     background-color: var(--primary-color);
     color: #ffffff;
     font-weight: 500;
     border-radius: 18px;
 }
+
 #layanan-card2-cardiff {
     background-color: var(--primary-color);
     color: var(--background-color)
 }
+
 #layanan-card2-cardiff .btn {
     background-color: var(--secondary-color);
 }
+
 /* layanan */
 
 /* tentang */
 .tentang {
     margin-top: 100px;
     background-color: var(--primary-color);
-    height: 600px;
-    padding: 60px 0;
+    height: fit-content;
+    padding: 60px 0 40px;
 }
+
 .tentang .container {
     max-width: 1000px;
     margin: 0 auto;
 }
+
 .tentang-header h1 {
     font-size: 48px;
     margin-bottom: 50px;
 }
+
 .tentang-header b {
     color: var(--secondary-color);
 }
+
 .visi-misi {
     justify-content: space-between;
     gap: auto;
 }
+
 .visi-misi-card {
     width: 430px;
     height: 170px;
@@ -369,32 +404,40 @@
     padding: 25px;
     display: flex;
 }
+
 .visi-misi-text {
     margin-left: 15px;
 }
+
 .visi-misi-text h3 {
     font-size: 24px;
 
 }
+
 .visi-misi-text p {
     font-size: 14px;
     color: var(--text-color);
 }
+
 .visi-text {
     color: var(--primary-color);
 }
+
 .misi-text {
     color: var(--secondary-color)
 }
+
 .tentang-img img {
     border-radius: 8px;
     display: block;
     object-fit: cover;
 }
+
 .tentang-img {
     position: relative;
     display: inline-block;
 }
+
 .bottom-left {
     position: absolute;
     bottom: 20px;
@@ -403,6 +446,7 @@
     font-weight: 600;
     z-index: 2;
 }
+
 .bottom-left p {
     color: var(--background-color);
     padding: 5px 10px;
@@ -410,6 +454,77 @@
     border-radius: 5px;
     margin: 0;
     font-size: 12px;
+}
+
+.tim-content {
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 90px auto auto auto;
+}
+
+.tim-text {
+    margin: 60px 0 40px 0;
+}
+
+.tim-text h1 {
+    color: var(--background-color);
+}
+
+.tim-text a {
+    color: var(--background-color);
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+#person {
+    background-color: var(--background-color);
+    width: 255px;
+    height: 250px;
+    border-radius: 5px;
+    position: relative;
+    overflow: visible;
+}
+
+#person:hover {
+    background-color: var(--secondary-color);
+    transition: 0.3s;
+}
+
+#person img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: center bottom;
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 2;
+}
+
+#person img:hover {
+    transform: translateX(-50%) scale(1.05);
+}
+.person-text {
+    padding-left: 8px;
+}
+.person-text h3 {
+    margin-top: 10px;
+    color: var(--background-color);
+    font-weight: 400;
+}
+.person-text p {
+    color: var(--background-color);
+    font-weight: 300;
+}
+
+.bos, .person1, .person2, .person3 {
+    display: flex;
+    flex-direction: column;
 }
 /* tentang */
 
