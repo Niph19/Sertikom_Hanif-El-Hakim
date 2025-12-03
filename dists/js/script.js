@@ -16,17 +16,14 @@ window.addEventListener("scroll", () => {
         formInput.addEventListener("submit", function(event) {
             event.preventDefault()
         
-        // pesan Error
             nameError.textContent = "";
             emailError.textContent = "";
             notelpError.textContent = "";
 
-        // Validasi Nama
             if (nameInput.value.trim() === "") {
                 nameError.textContent = "Nama Tidak Boleh Kosong";
             }
             
-            // Validasi Email
             const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
             if (emailInput.value.trim() === ""){
                 emailError.textContent = "Email Tidak Boleh Kosong";
@@ -34,10 +31,16 @@ window.addEventListener("scroll", () => {
                 emailError.textContent = "Format Email Tidak Valid";
             }
 
-            // validasi Notelp
             if (notelpInput.value.trim() === ""){
                 notelpError.textContent = "No. Telepon Tidak Boleh Kosong";
             } else if (notelpInput.value.length > 13) {
                 notelpError.textContent = "No. Telepon Tidak Valid";
+            } else if (notelpInput.value.length < 10) {
+                notelpError.textContent = "No. Telepon Tidak Valid";
+            }
+
+            if (nameError.textContent === "" && emailError.textContent === "" && notelpError.textContent === "") {
+                alert("✓ Terkirim! Tim VisiDigital akan menghubungi Anda dalam 1–2 hari kerja.");
+                formInput.reset();
             }
         });
