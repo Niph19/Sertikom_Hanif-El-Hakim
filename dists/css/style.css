@@ -156,7 +156,7 @@
 }
 
 #hero-text {
-    padding-top: 0;
+    padding-top: 120px;
 }
 
 #hero-text h1 {
@@ -808,19 +808,18 @@
     }
     #footer-logo p {
         text-align: center;
-        padding: 
     }
     #footer-contact {
         margin-bottom: 20px;
     }
+    #hero-text {
+    padding-top: 0;
+}
 }
 
 
 /* tablet breakpoint: keep spacing between hero and client */
 @media (max-width: 991.98px) {
-    .hero {
-
-    }
     .client {
         margin-top: 30px !important;
     }
