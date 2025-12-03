@@ -146,7 +146,8 @@
 /* hero */
 .hero {
     background-color: var(--background-color-2);
-    height: 769px;
+    padding: 120px 0 40px;
+    
 }
 
 .hero .container {
@@ -155,7 +156,7 @@
 }
 
 #hero-text {
-    padding-top: 150px;
+    padding-top: 0;
 }
 
 #hero-text h1 {
@@ -211,12 +212,13 @@
 .client {
     padding: 2px;
     max-width: 1000px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .client h3 {
     color: var(--heading-color);
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     font-size: 16px;
     padding-left: 18px;
 }
@@ -536,7 +538,7 @@
 .contact .container {
     /* max-width: 1600px; */
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     margin: 0 auto;
     padding: 0;
     gap: 20px;
@@ -565,20 +567,19 @@
 
 /* form */
 .form {
-    /* width: 100%; */
+    width: 800px;
     padding: 20px;
 }
 .form-container {
-            background-color: var(--secondary-color);
+            background-color: var(--primary-color);
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
             width: 100%;
         }
         .form-container h2 {
             text-align: center;
-            color: #333;
+            color: var(--secondary-color);
             margin-bottom: 20px;
         }
         .form-group {
@@ -629,6 +630,16 @@
         display: none;
     }
 
+    .hero {
+        padding: 80px 0 32px;
+    }
+
+    .client {
+        margin-top: 50px;
+    }
+    .client h3 {
+        margin-bottom: 15px;
+    }
     .navbar .container {
         padding: 0;
     }
@@ -654,6 +665,20 @@
 
     .navbar-brand {
         margin: 0;
+    }
+
+    .client {
+        margin-top: 50px;
+    }
+}
+
+/* tablet breakpoint: keep spacing between hero and client */
+@media (max-width: 991.98px) {
+    .hero {
+        
+    }
+    .client {
+        margin-top: 30px !important;
     }
 }
 
