@@ -637,6 +637,37 @@
         }
 /* form */
 
+/* footer */
+.footer-heading {
+    color: var(--secondary-color);
+}
+.footer {
+    background-color: var(--primary-color);
+}
+.footer p {
+    color: var(--background-color);
+}
+#footer-logo {
+    height: fit-content;
+    margin: auto 0;
+}
+
+#footer-logo b {
+    color: var(--secondary-color);
+}
+
+#footer-logo h1 {
+    margin-bottom: 0;
+    margin-top: 3px;
+    height: fit-content;
+}
+
+#footer-logo a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--heading-color)
+}
+/* footer */
 /* Responsive */
 @media (max-width: 600px) {
     .top {
@@ -644,7 +675,7 @@
     }
 
     .hero {
-        padding: 80px 0 32px;
+        padding: 60px 0 32px;
     }
 
     .client {
@@ -653,6 +684,7 @@
     .client h3 {
         margin-bottom: 15px;
     }
+    
     .navbar .container {
         padding: 0;
     }
@@ -680,10 +712,109 @@
         margin: 0;
     }
 
-    .client {
-        margin-top: 50px;
+    /* layanan cards responsif */
+    .layanan-card .card {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0 auto 20px auto;
+    }
+    
+    .layanan-card2 .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .layanan-card2 .card {
+        width: 100% !important;
+        max-width: 380px !important;
+        height: auto !important;
+    }
+
+    /* visi-misi responsif */
+    .visi-misi {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .visi-misi-card {
+        width: 100%;
+    }
+    
+    .tentang-img {
+        width: 100%;
+    }
+    
+    .tentang-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* tim content responsif */
+    .tim-content {
+        flex-direction: column;
+        gap: 30px;
+        margin: 50px auto auto auto;
+    }
+    
+    .bos, .person1, .person2, .person3 {
+        align-items: center;
+    }
+
+    /* contact form responsif */
+    .contact .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .map {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .form {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .form-container {
+        padding: 20px;
+    }
+    
+    .form-container h2 {
+        font-size: 24px;
+    }
+    
+    #form-sub {
+        font-size: 12px;
+    }
+
+    /* footer responsif */
+    .footer {
+        padding: 20px;
+    }
+    
+    #footer-logo {
+        margin-bottom: 20px;
+    }
+    
+    #footer-logo a {
+        margin-left: 0;
+        font-size: 18px;
+    }
+    #footer-logo p {
+        text-align: center;
+        padding: 
+    }
+    #footer-contact {
+        margin-bottom: 20px;
     }
 }
+
 
 /* tablet breakpoint: keep spacing between hero and client */
 @media (max-width: 991.98px) {
